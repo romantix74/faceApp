@@ -30,7 +30,7 @@ def parse_github():
     sorted_res = sorted(res, key=lambda i: i['stargazers_count'], reverse=True)[0:5]  
 
     for i in sorted_res:
-        print(f"{i['url']}")   # STAR: {i['stargazers_count']}")
+        print(f"{i['html_url']}")   # STAR: {i['stargazers_count']}")
 
 if __name__ == '__main__':
 
